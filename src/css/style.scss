@@ -30,3 +30,59 @@ nav {
     }
   }
 }
+
+/* Hero section  */
+
+.hero {
+  width: 100%;
+  padding: 5em 0;
+  &-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    .hero-img {
+      width: 160px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    .im-dimas {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+    .hero-info {
+      margin-bottom: 1.6rem;
+      h1 {
+        font-size: 3.9rem;
+        line-height: 4.3rem;
+        font-weight: 700;
+      }
+    }
+    .hero-job {
+      width: 70%;
+      margin: 0 auto;
+      h3 {
+        margin: 1rem 0;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        // letter-spacing: -1px;
+        span {
+          font-weight: 700;
+        }
+      }
+      .btn-connect {
+        background-color: #000000;
+        a {
+          font-size: 0.9rem;
+          color: $primary-color;
+        }
+      }
+      .btn-connect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
