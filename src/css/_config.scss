@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
-// Global variables
+/* Global variables */
 
 $primary-color: #ffffff;
-$font-dark: #000000;
-$font-gray: #525252;
+$hover-color: #f5f234;
+$font-dark: #262728;
+$font-gray: #808080;
+$bg-gray: #f9f9f9;
 $font-stack: "poppins", sans-serif;
+$font-unique: "Kaushan Script", cursive;
 
-// Global styles
+/* Global styles */
 
 *,
 ::after,
@@ -18,7 +22,7 @@ $font-stack: "poppins", sans-serif;
 }
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: $font-stack;
   background: $primary-color;
   color: $font-dark;
@@ -40,7 +44,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 h2 {
@@ -56,7 +60,9 @@ h4 {
 }
 
 p {
+  line-height: 1.7rem;
   // margin-bottom: 1rem;
+  font-size: 0.95rem;
   color: $font-gray;
 }
 
@@ -115,6 +121,11 @@ p {
 
 /* section */
 
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
 .section {
   padding: 5rem 0;
 }
@@ -149,4 +160,22 @@ p {
   color: var(--clr-primary-5);
 }
 
-/* Navigation Bar */
+/* Title style */
+
+.section-title {
+  h2 span {
+    position: relative;
+    font-family: $font-unique;
+    letter-spacing: 1px;
+    // background: maroon;
+  }
+  h2 span:after {
+    content: "";
+    position: absolute;
+    right: -120%;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: $hover-color;
+  }
+}

@@ -3,8 +3,7 @@ import React from "react"
 const Title = ({ title }) => {
   return (
     <div className="section-title">
-      <h2>{title || 'default title'}</h2>
-      <div className="underline"></div>
+      <h2><span>{title || 'default title'}</span></h2>
     </div>
   )
 }

@@ -3,85 +3,193 @@
 /* Navigation Bar */
 
 nav {
-  width: 100%;
-  height: 80px;
+  width: 92%;
+  padding: 1.5em 2em;
+  position: fixed;
+  border: none;
+  top: 25px;
+  left: 4%;
+  z-index: 99;
+  border-radius: 40px;
+  background-color: $primary-color;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   .nav-center {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-between;
     .logo a {
-      color: $font-dark;
+      color: #000;
       font-weight: 500;
       font-size: 1.2em;
     }
     .nav-links {
       display: flex;
+
       li {
+        position: relative;
         margin-left: 2.5em;
         text-transform: capitalize;
-        a {
+        .nav-link {
           font-weight: 500;
           color: $font-dark;
+          span {
+            position: relative;
+            z-index: 9999;
+          }
+        }
+        .nav-link span:after {
+          transition: 0.3s ease-in-out;
+          content: "";
+          position: absolute;
+          bottom: 1px;
+          left: 0;
+          background: $hover-color;
+          width: 100%;
+          height: 3px;
+        }
+        .nav-link:hover span:after {
+          height: 22px;
         }
       }
     }
   }
 }
 
-/* Hero section  */
+/* Header section  */
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &-left {
+    background: url("../assets/hero-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
+/* Hero Section */
 
 .hero {
-  width: 100%;
-  padding: 5em 0;
-  &-wrapper {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    .hero-img {
-      width: 160px;
-      margin: 0 auto;
-      border-radius: 50%;
+  .hero-wrapper {
+    h1 {
+      font-size: 3.7rem;
+      line-height: 3.5rem;
+      letter-spacing: 2px;
+      color: #262728;
+      font-family: $font-unique;
+      span {
+        z-index: 2;
+        position: relative;
+      }
     }
-    .im-dimas {
+    h1 span:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      height: 15px;
+      background: $hover-color;
+      transition: 0.3s ease-in-out;
+    }
+    h1:hover span:before {
+      height: 35px;
+    }
+    h4 {
+      font-size: 1.2rem;
       margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      font-size: 1.4rem;
     }
-    .hero-info {
-      margin-bottom: 1.6rem;
-      h1 {
-        font-size: 3.9rem;
-        line-height: 4.3rem;
-        font-weight: 700;
+    .social-hero {
+      margin: 1rem 0;
+      // li {
+      //   a:hover {
+      //     color: $hover-color;
+      //   }
+      // }
+    }
+  }
+}
+
+/* About section */
+.about {
+  .about-wrapper {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+  }
+  &-left {
+    .my-image {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  &-right {
+    padding: 2rem;
+    h1 {
+      margin-bottom: 1.5rem;
+      font-family: $font-unique;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      font-family: $font-stack;
+      color: $font-dark;
+      h4 {
+        position: relative;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      h4:after {
+        content: "";
+        background: $hover-color;
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 152px;
+        height: 7px;
       }
     }
-    .hero-job {
-      width: 70%;
-      margin: 0 auto;
-      h3 {
-        margin: 1rem 0;
-        font-weight: 400;
-        font-size: 1.3rem;
-        line-height: 1.9rem;
-        // letter-spacing: -1px;
+  }
+}
+
+/* Services section */
+
+.services {
+  width: 100%;
+  padding: 6em 0;
+  background: $bg-gray;
+  &-wrapper {
+    &-box {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      .service {
+        padding: 1rem 0;
         span {
-          font-weight: 700;
+          color: #e0ca04;
+          font-size: 2rem;
         }
-      }
-      .btn-connect {
-        background-color: #000000;
-        a {
-          font-size: 0.9rem;
-          color: $primary-color;
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-top: 1rem;
         }
-      }
-      .btn-connect:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        p {
+          margin-top: 1rem;
+          font-weight: 400;
+        }
       }
     }
   }

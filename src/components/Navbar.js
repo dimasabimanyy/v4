@@ -5,15 +5,6 @@ import PageLinks from "../constants/links"
 import { Link } from 'gatsby'
 const Navbar = ({ toggleSidebar }) => {
   return <nav className="navbar">
-    {/* <div className="nav-center">
-      <div className="nav-header">
-        <img src={logo} alt="logo"/>
-        <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-          <FaAlignRight></FaAlignRight>
-        </button>
-      </div>
-      <PageLinks styleClass="nav-links"></PageLinks>
-    </div> */}
     <div className="nav-center">
       <div className="logo">
         <Link to="/">
@@ -21,6 +12,9 @@ const Navbar = ({ toggleSidebar }) => {
         </Link>
       </div>
       <PageLinks styleClass="nav-links"></PageLinks>
+      {/* <button type="button" className="toggle-btn" onClick={toggleSidebar}>
+          <FaAlignRight></FaAlignRight>
+        </button> */}
     </div>
   </nav>
 }

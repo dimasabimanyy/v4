@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import Hero from "../components/Hero"
-import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import Header from "../components/Header"
+import About from "../components/About"
+import Services from "../components/Services"
 
 export default ({ data }) => {
   const {
@@ -17,9 +18,10 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" description="Homepage Portfolio Dimas Abimanyu" />
-      <Hero />
+      <Header />
+      <About />
       <Services />
-      <Jobs />
+      {/* <Jobs /> */}
       <Projects projects={projects} title="Featured Projects" showLink/>
       <Blogs blogs={blogs} title="Latest Articles" showLink />
     </Layout>
