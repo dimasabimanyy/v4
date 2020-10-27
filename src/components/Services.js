@@ -3,7 +3,7 @@ import Title from "./Title"
 import services from "../constants/services"
 const Services = () => {
   return (
-    <section className="services" id="services">
+    <section className="services section" id="services">
       <div className="services-wrapper container">
       <Title title="services" />
         <div className="services-wrapper-box">

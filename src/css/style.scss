@@ -121,6 +121,7 @@ nav {
 
 /* About section */
 .about {
+  background: $bg-gray;
   .about-wrapper {
     height: 100vh;
     display: grid;
@@ -167,8 +168,6 @@ nav {
 
 .services {
   width: 100%;
-  padding: 6em 0;
-  background: $bg-gray;
   &-wrapper {
     &-box {
       margin-top: 2rem;
@@ -189,6 +188,88 @@ nav {
         p {
           margin-top: 1rem;
           font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+/* Featured Projects */
+
+.projects {
+  background: $bg-gray;
+  &-wrap {
+    &-item {
+      position: relative;
+      margin: 3rem 0;
+      .project:nth-child(2) {
+        position: relative;
+        text-align: left;
+        .project-left {
+          position: absolute;
+          right: 0;
+        }
+        .project-right {
+          position: relative;
+          .project-info {
+          }
+        }
+      }
+      .project {
+        margin-bottom: 6rem;
+        text-align: right;
+        position: relative;
+        display: flex;
+        &-left {
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          width: 57%;
+          transition: 0.3s ease-in-out;
+        }
+        &-left:hover {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        &-right {
+          position: absolute;
+          right: 0;
+          width: 57%;
+          h5 {
+            font-family: $font-unique;
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+          h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.7rem;
+          }
+          .project-info {
+            background: $bg-gray;
+            // background: $primary-color;
+            padding: 1rem 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            p {
+              font-size: 0.9rem;
+            }
+          }
+          .project-tech {
+            font-size: 1rem;
+            // font-family: $font-unique;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            span {
+              margin-left: 1rem;
+            }
+          }
+          .project-links {
+            a {
+              color: $font-dark;
+              .project-icon {
+                font-size: 1.8rem;
+                margin-left: 1rem;
+              }
+            }
+          }
         }
       }
     }
