@@ -16,7 +16,7 @@ const contact = () => {
             </div>
             <div className="form-group">
                 <div className="contact-msg">
-                    <textarea name="message" id="" className="form-control" placeholder="Message *"></textarea>
+                    <textarea name="message" rows="100" cols="100" id="" className="form-control" placeholder="Message *"></textarea>
                 </div>
             </div>
             <button type="submit" className="submit-btn btn">Submit here</button>

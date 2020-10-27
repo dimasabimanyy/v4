@@ -3,10 +3,10 @@ import SocialLinks from "../constants/socialLinks"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>
+      <div className="container">
         <SocialLinks styleClass="footer-links"></SocialLinks>
-        <h4>Copyright &copy; {new Date().getFullYear()}
-        <span> Dimas Abimanyu</span> all right reserved</h4>
+        <p>&copy; {new Date().getFullYear()} 
+        <span> <a href="" alt="dimas abimanyu github">Dimas Abimanyu</a></span> all right reserved</p>
       </div>
     </footer>
   )
