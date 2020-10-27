@@ -121,7 +121,6 @@ nav {
 
 /* About section */
 .about {
-  background: $bg-gray;
   .about-wrapper {
     height: 100vh;
     display: grid;
@@ -142,6 +141,8 @@ nav {
     }
     p {
       margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 0.9rem;
     }
     a {
       font-family: $font-stack;
@@ -168,6 +169,7 @@ nav {
 
 .services {
   width: 100%;
+  background: $bg-gray;
   &-wrapper {
     &-box {
       margin-top: 2rem;
@@ -187,7 +189,8 @@ nav {
         }
         p {
           margin-top: 1rem;
-          font-weight: 400;
+          font-size: 0.88rem;
+          font-weight: 300;
         }
       }
     }
@@ -197,33 +200,38 @@ nav {
 /* Featured Projects */
 
 .projects {
-  background: $bg-gray;
   &-wrap {
     &-item {
       position: relative;
       margin: 3rem 0;
-      .project:nth-child(2) {
-        position: relative;
+      .project:nth-child(even) {
         text-align: left;
+        margin-bottom: 8rem;
         .project-left {
           position: absolute;
           right: 0;
         }
         .project-right {
           position: relative;
-          .project-info {
-          }
         }
       }
       .project {
-        margin-bottom: 6rem;
         text-align: right;
         position: relative;
         display: flex;
+        margin-bottom: 6rem;
         &-left {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          width: 57%;
+          width: 55%;
+          height: 350px;
+          overflow: hidden;
+          background: maroon;
           transition: 0.3s ease-in-out;
+          position: relative;
+          .project-img {
+            position: absolute;
+            height: 350px;
+          }
         }
         &-left:hover {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -231,7 +239,7 @@ nav {
         &-right {
           position: absolute;
           right: 0;
-          width: 57%;
+          width: 55%;
           h5 {
             font-family: $font-unique;
             font-size: 1rem;
@@ -249,7 +257,8 @@ nav {
             margin-bottom: 0.8rem;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
             p {
-              font-size: 0.9rem;
+              font-size: 0.88rem;
+              font-weight: 300;
             }
           }
           .project-tech {
@@ -271,6 +280,50 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+}
+
+/* Contact section */
+#contact {
+  background: $bg-gray;
+  .contact-form {
+    form {
+      margin-top: 2rem;
+      .form-group {
+        gap: 3rem;
+        width: 100%;
+        margin-bottom: 2em;
+        position: relative;
+        div {
+          position: relative;
+          outline: none;
+          textarea {
+            width: 100%;
+            overflow: auto;
+          }
+          label {
+            width: 100%;
+            z-index: 9;
+          }
+          input,
+          textarea {
+            padding: 2rem 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background: $bg-gray;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.836);
+          }
+        }
+        .contact-msg {
+          height: 80px;
+        }
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
     }
   }

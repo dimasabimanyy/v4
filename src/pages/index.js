@@ -8,6 +8,7 @@ import SEO from "../components/SEO"
 import Header from "../components/Header"
 import About from "../components/About"
 import Services from "../components/Services"
+import FormContact from "../components/FormContact"
 
 export default ({ data }) => {
   const {
@@ -24,6 +25,8 @@ export default ({ data }) => {
       {/* <Jobs /> */}
       <Projects projects={projects} title="Featured Projects" showLink/>
       {/* <Blogs blogs={blogs} title="Latest Articles" showLink /> */}
+      {/* <NoteworthyProjects /> */}
+      <FormContact />
     </Layout>
   )
 }
