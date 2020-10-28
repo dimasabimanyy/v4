@@ -28,7 +28,7 @@ function About() {
                     <Image fluid={fluid} className="my-image"/>
                 </div>
                 <div className="about-right">
-                    <h1>I'm Steven Hendrix, Web Designer & Web Developer from United States, California.</h1>
+                    <h1>I'm Dimas Abimanyu, Web Designer & Web Developer from United States, California.</h1>
                     <p>
                     I have rich experience in web site design & building and customization. Also I am good at html, css, javascript, wordpress, php, jquery, bootstrap. I love to talk with you about our unique approach. Feel free to contact me writing an email with your project idea.
                     </p>

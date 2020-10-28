@@ -144,24 +144,6 @@ nav {
       font-weight: 300;
       font-size: 0.9rem;
     }
-    // a {
-    //   font-family: $font-stack;
-    //   color: $font-dark;
-    //   h4 {
-    //     position: relative;
-    //     font-weight: 500;
-    //     font-size: 1rem;
-    //   }
-    //   h4:after {
-    //     content: "";
-    //     background: $hover-color;
-    //     position: absolute;
-    //     bottom: 3px;
-    //     left: 0;
-    //     width: 152px;
-    //     height: 7px;
-    //   }
-    // }
   }
 }
 
@@ -213,6 +195,10 @@ nav {
         }
         .project-right {
           position: relative;
+          .project-links {
+            display: flex;
+            justify-content: flex-start;
+          }
         }
       }
       .project {
@@ -225,7 +211,6 @@ nav {
           width: 55%;
           height: 350px;
           overflow: hidden;
-          background: maroon;
           transition: 0.3s ease-in-out;
           position: relative;
           .project-img {
@@ -234,12 +219,18 @@ nav {
           }
         }
         &-left:hover {
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+            rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          transform: translateY(-3px);
         }
         &-right {
           position: absolute;
           right: 0;
           width: 55%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 350px;
           h5 {
             font-family: $font-unique;
             font-size: 1rem;
@@ -262,7 +253,7 @@ nav {
             }
           }
           .project-tech {
-            font-size: 1rem;
+            font-size: 0.95rem;
             // font-family: $font-unique;
             font-weight: 500;
             margin-bottom: 0.5rem;
@@ -271,11 +262,26 @@ nav {
             }
           }
           .project-links {
-            a {
-              color: $font-dark;
-              .project-icon {
-                font-size: 1.8rem;
-                margin-left: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            .project-link-icon {
+              margin-top: 0.3rem;
+              div {
+                border: 1px solid #ccc;
+                width: 2.8rem;
+                height: 2.8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-left: 0.5rem;
+                .project-icon {
+                  color: $font-dark;
+                  font-size: 1.3rem;
+                }
+              }
+              div:hover {
+                border: 1px solid $hover-color;
               }
             }
           }
