@@ -22,10 +22,7 @@ export default ({ data }) => {
       <Header />
       <About />
       <Services />
-      {/* <Jobs /> */}
       <Projects projects={projects} title="Featured Projects" showLink/>
-      {/* <Blogs blogs={blogs} title="Latest Articles" showLink /> */}
-      {/* <NoteworthyProjects /> */}
       <FormContact />
     </Layout>
   )
