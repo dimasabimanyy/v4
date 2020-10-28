@@ -12,9 +12,9 @@ const Projects = ({ title, showLink, projects }) => {
         })}
       </div>
       <div>
-        <button>
+        <button className="btn center-btn btn-all-project">
           <Link to="/projects">
-            See All
+            All Projects
           </Link>
         </button>
       </div>

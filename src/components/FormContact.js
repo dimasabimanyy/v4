@@ -19,7 +19,7 @@ const contact = () => {
                     <textarea name="message" rows="100" cols="100" id="" className="form-control" placeholder="Message *"></textarea>
                 </div>
             </div>
-            <button type="submit" className="submit-btn btn">Submit here</button>
+            <button type="submit" className="btn btn-submit">Submit here</button>
         </form>
       </div>
     </section>

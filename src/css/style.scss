@@ -144,24 +144,24 @@ nav {
       font-weight: 300;
       font-size: 0.9rem;
     }
-    a {
-      font-family: $font-stack;
-      color: $font-dark;
-      h4 {
-        position: relative;
-        font-weight: 500;
-        font-size: 1rem;
-      }
-      h4:after {
-        content: "";
-        background: $hover-color;
-        position: absolute;
-        bottom: 3px;
-        left: 0;
-        width: 152px;
-        height: 7px;
-      }
-    }
+    // a {
+    //   font-family: $font-stack;
+    //   color: $font-dark;
+    //   h4 {
+    //     position: relative;
+    //     font-weight: 500;
+    //     font-size: 1rem;
+    //   }
+    //   h4:after {
+    //     content: "";
+    //     background: $hover-color;
+    //     position: absolute;
+    //     bottom: 3px;
+    //     left: 0;
+    //     width: 152px;
+    //     height: 7px;
+    //   }
+    // }
   }
 }
 
