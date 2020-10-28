@@ -40,19 +40,6 @@ nav {
             z-index: 9999;
           }
         }
-        // .nav-link span:after {
-        //   transition: 0.3s ease-in-out;
-        //   content: "";
-        //   position: absolute;
-        //   bottom: 1px;
-        //   left: 0;
-        //   background: $hover-color;
-        //   width: 100%;
-        //   height: 3px;
-        // }
-        // .nav-link:hover span:after {
-        //   height: 22px;
-        // }
       }
     }
   }
@@ -136,13 +123,16 @@ nav {
   &-right {
     padding: 2rem;
     h1 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 3rem;
       font-family: $font-unique;
     }
     p {
       margin-bottom: 2rem;
       font-weight: 300;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
   }
 }
@@ -374,5 +364,42 @@ footer {
         bottom: 2px;
       }
     }
+  }
+}
+
+/*  ===============  */
+
+// Now that is interesting
+.underlined {
+  color: black;
+  flex: 1;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+  .about-right:hover & {
+    background-size: 100% 100%;
+  }
+  &--thin {
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  }
+  &--thick {
+    background-position: 0 -0.1em;
+  }
+  &--offset {
+    background-position: 0 0.2em;
+    //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg
+    box-shadow: inset 0 -0.5em 0 0 white;
+  }
+  &--gradient {
+    background-position: 0 -0.1em;
+    background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+  }
+  &--reverse {
+    background-position: 100% -0.1em;
+    transition: background 1s; //yep, that's a long link
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
   }
 }

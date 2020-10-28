@@ -27,7 +27,7 @@ const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
       <Link to={link.url} className="nav-link">
-        <span>
+        <span className="underlined underlined--thick">
           {link.text}
         </span>
       </Link>
