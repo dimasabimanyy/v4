@@ -4,9 +4,9 @@ import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import { Link } from 'gatsby'
 const Navbar = ({ toggleSidebar }) => {
-  return <nav className="navbar">
+  return <nav className="navbar" data-aos="fade-down" data-aos-duration="700">
     <div className="nav-center">
-      <div className="logo">
+      <div className="logo" data-aos="fade-in" data-aos-duration="700" data-aos-delay="700">
         <Link to="/">
           D'Abimanyu
         </Link>

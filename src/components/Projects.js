@@ -12,7 +12,7 @@ const Projects = ({ title, showLink, projects }) => {
         })}
       </div>
       <div>
-        { showLink && <button className="btn center-btn btn-all-project" data-aos="fade-up" data-aos-duration="700">
+        { showLink && <button className="btn center-btn btn-all-project" data-aos="fade-up" data-aos-duration="4000">
           <Link to="/projects">
             All Projects
           </Link>

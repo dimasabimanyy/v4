@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import Aos  from 'aos'
-import "aos/dist/aos.css"
 
 const query = graphql`
   {
@@ -23,12 +21,9 @@ function About() {
         },
       } = useStaticQuery(query)
 
-    useEffect(() => {
-      Aos.init({})
-    }, []);
       
     return (
-        <section className="about">
+        <section className="about section" id="about">
             <div className="about-wrapper container">
                 <div className="about-left" data-aos="fade-right" data-aos-duration="700">
                     <Image fluid={fluid} className="my-image"/>

@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 // import "../css/main.css"
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+import Aos  from 'aos'
+import "aos/dist/aos.css"
 const Layout = ({ children }) => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +10,13 @@ const Layout = ({ children }) => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
   }
+  
+  useEffect(() => {
+    Aos.init({})
+  }, []);
 
   return (
     <>
-    {/* <Navbar toggleSidebar={toggleSidebar} /> */}
-    {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
       {children}
     <Footer />
     </>
