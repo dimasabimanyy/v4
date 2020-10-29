@@ -12,11 +12,13 @@ const Projects = ({ title, showLink, projects }) => {
         })}
       </div>
       <div>
-        { showLink && <button className="btn center-btn btn-all-project" data-aos="fade-up" data-aos-duration="4000">
+        { showLink && 
           <Link to="/projects">
+            <button className="btn center-btn btn-all-project" data-aos="fade-up" data-aos-duration="4000">
             All Projects
+            </button>
           </Link>
-        </button>}
+        }
       </div>
     </div>
   </section>

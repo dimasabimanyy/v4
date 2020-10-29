@@ -33,7 +33,7 @@ function Header() {
   return (
     <header className="header">
       <Navbar toggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
         <div className="header-left" data-aos="fade-left" data-aos-duration="700" data-aos-delay="1350">
         </div>
         <div className="header-right">
