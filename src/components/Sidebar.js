@@ -4,15 +4,12 @@ import SocialLinks from "../constants/socialLinks"
 import { FaTimes } from "react-icons/fa"
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 
-  return <div className={`sidebar ${isOpen ? "show-sidebar" : ""}`}>
-    <button className="close-btn" onClick={toggleSidebar}>
-      <FaTimes />
-    </button>
-    <div className="side-container">
-      <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
-      <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} />
-    </div>
-  </div>
+  return (
+    <section className={`sidebar ${isOpen ? "show-sidebar" : ""}`}>
+      <Links styleClass="sidebar-links" />
+      {/* <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} /> */}
+    </section>
+  )
 }
 
 export default Sidebar

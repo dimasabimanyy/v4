@@ -43,13 +43,16 @@ nav {
       }
     }
   }
+  .three {
+    display: none;
+  }
 }
-
-/* Sidebar section */
 
 /* Header section  */
 
 .header {
+  position: relative;
+  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -62,6 +65,59 @@ nav {
     display: flex;
     align-items: center;
     padding: 2rem;
+  }
+}
+
+/* Sidebar section */
+
+/* Sidebar */
+
+.sidebar {
+  background-color: $hover-color;
+  transition: 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hover-color;
+  .sidebar-links {
+    li {
+      margin: 1.6rem 0;
+      span {
+        font-size: 1.5rem;
+        color: $font-dark;
+        font-weight: 700;
+        opacity: 0 !important;
+        text-transform: capitalize;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+.sidebar .sidebar-links li span {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.show-sidebar {
+  position: absolute;
+  left: 0;
+  .sidebar-links {
+    li {
+      span {
+        opacity: 1 !important;
+        outline-style: none;
+        font-weight: 700;
+        color: $font-dark;
+        font-size: 2.5rem;
+      }
+    }
   }
 }
 
@@ -362,5 +418,6 @@ footer {
     }
   }
 }
+
 @import "projects";
 @import "tablet";
