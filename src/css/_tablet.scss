@@ -1,9 +1,4 @@
-/* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 768px) {
-  body {
-    background: transparent;
-  }
-
   nav {
     display: none;
     top: 0;
@@ -41,6 +36,72 @@
     &-wrapper {
       &-box {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .projects {
+    .project:nth-child(even) {
+      .project-right {
+        .project-links {
+          justify-content: center;
+        }
+      }
+    }
+    .project {
+      display: grid;
+      grid-template-columns: 1fr;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      &-left {
+        width: 100% !important;
+        position: relative !important;
+        height: 250px;
+        box-shadow: none;
+        .project-img {
+          height: 250px;
+        }
+      }
+      &-right {
+        background-color: $bg-gray;
+        padding: 1rem 1.5rem;
+        width: 100% !important;
+        position: relative !important;
+        text-align: center;
+        h2 {
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+        }
+        .project-info {
+          box-shadow: none;
+          padding: 0;
+          background: transparent;
+        }
+        .project-links {
+          justify-content: center;
+          .project-link-icon {
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  .contact-form {
+    form {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .form-group {
+        gap: 0;
+        margin-bottom: 0;
+        div {
+          margin-bottom: 1rem;
+          input,
+          textarea {
+            padding: 1rem 0;
+          }
+        }
       }
     }
   }
