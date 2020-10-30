@@ -56,11 +56,19 @@ nav {
   height: 100vh;
   display: grid;
   &-left {
-    background: url("../assets/hero-bg.jpg");
-    background-size: cover;
-    background-position: center center;
+    position: relative;
+    .parallax {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    // background: url("../assets/hero-bg.jpg");
+    // background-size: cover;
+    // background-position: center center;
   }
   &-right {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -189,6 +197,7 @@ nav {
 /* About section */
 .about {
   position: relative;
+  background: #fff;
   &-wrapper {
     display: grid;
     align-items: center;
