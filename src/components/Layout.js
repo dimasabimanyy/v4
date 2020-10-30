@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 // import "../css/main.css"
 import Footer from "./Footer"
 import Aos  from 'aos'

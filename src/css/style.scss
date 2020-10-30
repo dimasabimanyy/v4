@@ -262,6 +262,8 @@ nav {
 /* Featured Projects */
 
 .projects {
+  position: relative;
+  background: #ffffff;
   &-wrap {
     .to-all-project {
       margin-top: 6rem !important;
