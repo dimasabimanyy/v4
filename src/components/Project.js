@@ -5,10 +5,10 @@ import { FaGithub, FaLink } from "react-icons/fa"
 
 const Project = ({ description, github, title, url, stack, image, index }) => {
 
-  return <div className="project" >
-    <div className="project-left" data-aos="flip-left">
-      <a href={url} alt={title} target="_blank" >
-       <Image fluid={image.childImageSharp.fluid} className="project-img" /> 
+  return <div className="project">
+    <div className="project-left">
+      <a href={url} alt={title} target="_blank">
+       <Image fluid={image.childImageSharp.fluid} className="project-img"  /> 
       </a>
     </div>
     <div className="project-right" data-aos="fade-left" data-aos-duration="1000">

@@ -254,12 +254,15 @@ nav {
 
 .projects {
   &-wrap {
+    .to-all-project {
+      margin-top: 6rem !important;
+    }
     &-item {
       position: relative;
-      margin: 3rem 0;
+      margin-top: 3em;
       .project:nth-child(even) {
         text-align: left;
-        margin-bottom: 8rem;
+        margin-bottom: 7rem;
         .project-left {
           position: absolute;
           right: 0;
@@ -273,11 +276,14 @@ nav {
           }
         }
       }
+      .project:last-child {
+        margin-bottom: 1em !important;
+      }
       .project {
         text-align: right;
         position: relative;
         display: flex;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         &-left {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           width: 55%;

@@ -19,7 +19,9 @@ const contact = () => {
                     <textarea name="message" rows="100" cols="100" id="" className="form-control" placeholder="Message *"></textarea>
                 </div>
             </div>
-            <button type="submit" className="btn btn-submit" data-aos="fade-up" data-aos-duration="700">Send</button>
+            <div  data-aos="fade-up" data-aos-duration="1000">
+                <button type="submit" className="btn btn-submit">Send</button>
+            </div>
         </form>
       </div>
     </section>
