@@ -22,12 +22,12 @@ nav {
     justify-content: space-between;
     .logo a {
       color: #000;
-      font-weight: 500;
-      font-size: 1.2em;
+      font-weight: 600;
+      font-size: 1.5em;
+      font-family: $font-unique;
     }
     .nav-links {
       display: flex;
-
       li {
         position: relative;
         margin-left: 2.5em;
@@ -35,11 +35,25 @@ nav {
         .nav-link {
           font-weight: 500;
           color: $font-dark;
+          position: relative;
           span {
+            // initiate span for nav active
             position: relative;
             z-index: 9999;
+            text-decoration: none;
+            background-image: linear-gradient(to right, yellow 0, yellow 100%);
+            background-position: 0 1.2em;
+            background-size: 0 100%;
+            background-repeat: no-repeat;
+            transition: background 0.05s ease-in-out;
+            background-position: 0 -0.1em;
           }
         }
+      }
+    }
+    .nav-active {
+      a span {
+        background-size: 100% 100% !important;
       }
     }
   }
@@ -63,9 +77,6 @@ nav {
       height: 100%;
       object-fit: cover;
     }
-    // background: url("../assets/hero-bg.jpg");
-    // background-size: cover;
-    // background-position: center center;
   }
   &-right {
     position: relative;
