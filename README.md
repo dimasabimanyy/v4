@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center"> 
-  The fourth iteration of my personal portfolio site built with Gatsby and Strapi headless CMS - hosted with Github Pages.
+  The fourth iteration of my personal portfolio site built with Gatsby and Strapi headless CMS - hosted with Netlify.
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <a href="https://github.com/dimasabimanyy/v3" target="_blank">v3</a>
 </p>
 
-![Website Screenshot](https://raw.githubusercontent.com/dimasabimanyy/v4/master/src/assets/home-ss.png)
+![Website Screenshot](https://raw.githubusercontent.com/dimasabimanyy/v4/master/src/assets/screenshot-home.png)
 
 # Complete Project Setup
 
