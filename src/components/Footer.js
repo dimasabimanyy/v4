@@ -5,8 +5,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <SocialLinks styleClass="footer-links"></SocialLinks>
-        <p>&copy; {new Date().getFullYear()} 
-        <span> <a href="" alt="dimas abimanyu github">Dimas Abimanyu</a></span> all right reserved</p>
+        <p>
+          <a href="https://github.com/dimasabimanyy/v4" alt="dimas abimanyu github" target="_blank">
+            Designed and Built by Dimas Abimanyu 
+            🤙 &copy; {new Date().getFullYear()}
+          </a>
+        </p>
       </div>
     </footer>
   )

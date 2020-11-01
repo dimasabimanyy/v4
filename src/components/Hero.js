@@ -1,6 +1,5 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
-// import Typical from 'react-typical'
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {  
@@ -12,7 +11,7 @@ const Hero = () => {
       <h4>
       <Typewriter
         options={{
-          strings: ['Full Stack Developer 💻', 'Open Sourcer 🔍', 'Content Creator 📹'],
+          strings: ['Full Stack Developer 💻', 'Freelancer' ,'Open Sourcer 🔍', 'Content Creator 📹'],
           autoStart: true,
           loop: true
         }}

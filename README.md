@@ -1,3 +1,27 @@
+<h1 align="center">
+  Dimas Abimanyu - v4
+</h1>
+
+<p align="center"> 
+  The fourth iteration of my personal portfolio site built with Gatsby and Strapi headless CMS - hosted with Netlify.
+</p>
+
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/dimasabimanyy/v1" target="_blank">v1</a>,
+  <a href="https://github.com/dimasabimanyy/v2" target="_blank">v2</a>,
+  <a href="https://github.com/dimasabimanyy/v3" target="_blank">v3</a>
+</p>
+
+![alt text](https://github.com/dimasabimanyy/v4/blob/master/home-ss.png?raw=true)
+
+# Complete Project Setup
+
+In order to use complete project you will need:
+
+1. Strapi Instance with all Content-Types and at least single instance of data (for each content-type). Check gatsby-config
+2. Permissions for all content-type's
+
 ## Setup Notes
 
 1. All components ready to go (including imports)
@@ -15,11 +39,8 @@ const Component = () => {
 ```
 
 5. Use constants to avoid repetition.
-6. In order to follow along with the video use my backend (url below)
 
-   [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
-
-7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+6. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
 
 ```javascript
 {
