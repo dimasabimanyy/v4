@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center"> 
-  The fourth iteration of my personal portfolio site built with Gatsby and Strapi headless CMS - hosted with Netlify.
+  The fourth iteration of my personal portfolio site built with Gatsby and Strapi headless CMS - hosted with Github Pages.
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <a href="https://github.com/dimasabimanyy/v3" target="_blank">v3</a>
 </p>
 
-![alt text](https://github.com/dimasabimanyy/v4/blob/master/home-ss.png?raw=true)
+![Website Screenshot](https://raw.githubusercontent.com/dimasabimanyy/v4/master/src/assets/home-ss.png)
 
 # Complete Project Setup
 
@@ -55,3 +55,13 @@ const Component = () => {
       },
     },
 ```
+
+## 🎨 Color Reference
+
+| Color         | Hex                                                                |
+| ------------- | ------------------------------------------------------------------ |
+| Yellow        | ![#ffff00](https://via.placeholder.com/10/ffff00?text=+) `#ffff00` |
+| White         | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
+| Black         | ![#262728](https://via.placeholder.com/10/262728?text=+) `#262728` |
+| Gray          | ![#808080](https://via.placeholder.com/10/808080?text=+) `#808080` |
+| Golden Yellow | ![#ffd504](https://via.placeholder.com/10/ffd504?text=+) `#ffd504` |
