@@ -25,7 +25,7 @@ In order to use complete project you will need:
 ## Setup Notes
 
 1. All components ready to go (including imports)
-2. Use main.css - less imports
+2. Use style.scss as main style
 3. Limit amount of components - better overview
 4. React Icons
 
