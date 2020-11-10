@@ -10,8 +10,8 @@ import FormContact from "../components/FormContact"
 
 export default ({ data }) => {
   const {
-    allStrapiProjects: {nodes:projects},
-    allStrapiBlogs: {nodes:blogs}  
+    allStrapiProjects: { nodes: projects },
+    // allStrapiBlogs: {nodes:blogs}
   } = data
 
   return (
@@ -20,7 +20,7 @@ export default ({ data }) => {
       <Header />
       <About />
       <Services />
-      <Projects projects={projects} title="Featured Projects" showLink/>
+      <Projects projects={projects} title="Featured Projects" showLink />
       <FormContact />
     </Layout>
   )
@@ -28,7 +28,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProjects(filter: {featured: {eq: true}}) {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
         github
         id
@@ -45,24 +45,6 @@ export const query = graphql`
         stack {
           id
           title
-        }
-      }
-    }
-    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
-      nodes {
-        slug
-        content
-        desc
-        date(formatString: "MMMM Do, YYYY")
-        id
-        title
-        category
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
         }
       }
     }

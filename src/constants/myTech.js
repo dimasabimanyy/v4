@@ -22,7 +22,7 @@ const data = [
     },
     {
         id: 5,
-        name: "Vue"
+        name: "Bootstrap"
     },
     {
         id: 6,
